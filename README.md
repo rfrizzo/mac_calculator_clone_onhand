@@ -1,6 +1,7 @@
 # calculator
 
 A new Flutter project.
+Clone of Mac Calculator with logic
 
 ## Getting Started
 
