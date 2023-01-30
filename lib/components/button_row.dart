@@ -1,9 +1,13 @@
-import 'package:calculator/components/button.dart';
 import 'package:flutter/material.dart';
 
 class ButtonRow extends StatelessWidget {
-  final List<Button> buttons;
+  final List<Widget> buttons;
   const ButtonRow({
+    required this.buttons,
+    super.key,
+  });
+
+  const ButtonRow.big({
     required this.buttons,
     super.key,
   });
@@ -13,7 +17,7 @@ class ButtonRow extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Padding(
-        padding: const EdgeInsets.all(1),
+        padding: const EdgeInsets.only(bottom: 1),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: buttons.fold([], (list, b) {

@@ -13,6 +13,9 @@ class Keyboard extends StatelessWidget {
       child: Column(
         children: [
           ButtonRow(buttons: [
+            const SizedBox(
+              height: 1,
+            ),
             Button(
               cb: cb,
               color: Button.DARK,
@@ -45,8 +48,11 @@ class Keyboard extends StatelessWidget {
             Button.operation(text: '+', cb: cb)
           ]),
           ButtonRow(buttons: [
+            const SizedBox(
+              height: 1,
+            ),
             Button(text: '0', flex: 2, cb: cb),
-            Button(text: ',', cb: cb),
+            Button(text: '.', cb: cb),
             Button.operation(text: '=', cb: cb),
           ]),
         ],
